@@ -2901,19 +2901,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vitor Pinto Moreira\\.nuget\\packages\\": {}
+    "C:\\Users\\diona\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
+      "projectUniqueName": "C:\\Users\\diona\\Desktop\\Projetos\\Trabalho API\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
       "projectName": "GerenciamentoProdutos",
-      "projectPath": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
-      "packagesPath": "C:\\Users\\Vitor Pinto Moreira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\obj\\",
+      "projectPath": "C:\\Users\\diona\\Desktop\\Projetos\\Trabalho API\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
+      "packagesPath": "C:\\Users\\diona\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\diona\\Desktop\\Projetos\\Trabalho API\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vitor Pinto Moreira\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\diona\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -2931,11 +2931,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2972,6 +2967,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2980,7 +2993,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
