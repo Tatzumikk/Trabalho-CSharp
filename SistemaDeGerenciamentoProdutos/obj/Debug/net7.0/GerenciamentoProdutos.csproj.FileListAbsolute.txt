@@ -62,3 +62,14 @@ C:\Users\autologon\Desktop\trabalho\upes022024-desenvolvimento-de-software-visua
 C:\Users\autologon\Desktop\trabalho\upes022024-desenvolvimento-de-software-visual\SistemaDeGerenciamentoProdutos\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\autologon\Desktop\trabalho\upes022024-desenvolvimento-de-software-visual\SistemaDeGerenciamentoProdutos\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\autologon\Desktop\trabalho\upes022024-desenvolvimento-de-software-visual\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.csproj.AssemblyReference.cache
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.AssemblyInfoInputs.cache
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.AssemblyInfo.cs
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.csproj.CoreCompileInputs.cache
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.sourcelink.json
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.dll
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\refint\GerenciamentoProdutos.dll
+C:\Users\Vitor Pinto Moreira\Desktop\Trabalho-CSharp\SistemaDeGerenciamentoProdutos\obj\Debug\net7.0\GerenciamentoProdutos.pdb

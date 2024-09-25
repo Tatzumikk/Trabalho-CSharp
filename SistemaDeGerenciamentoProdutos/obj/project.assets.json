@@ -2901,19 +2901,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JAVA\\.nuget\\packages\\": {}
+    "C:\\Users\\Vitor Pinto Moreira\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JAVA\\Downloads\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
+      "projectUniqueName": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
       "projectName": "GerenciamentoProdutos",
-      "projectPath": "C:\\Users\\JAVA\\Downloads\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
-      "packagesPath": "C:\\Users\\JAVA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JAVA\\Downloads\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\obj\\",
+      "projectPath": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
+      "packagesPath": "C:\\Users\\Vitor Pinto Moreira\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JAVA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Vitor Pinto Moreira\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -2972,24 +2972,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2998,7 +2980,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
