@@ -5,9 +5,7 @@ function NavApp(){
         <nav class="main-nav">
         <ul>
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/tarefas">Tarefas</NavLink></li>
-            <li><NavLink to="/page3">Página 3</NavLink></li>
-        </ul>
+                  </ul>
     </nav>
     );
 }
