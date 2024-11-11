@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\diona\\Desktop\\Projetos\\Trabalho API\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj": {}
+    "C:\\_ws\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\diona\\Desktop\\Projetos\\Trabalho API\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj": {
+    "C:\\_ws\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diona\\Desktop\\Projetos\\Trabalho API\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
+        "projectUniqueName": "C:\\_ws\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
         "projectName": "GerenciamentoProdutos",
-        "projectPath": "C:\\Users\\diona\\Desktop\\Projetos\\Trabalho API\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
-        "packagesPath": "C:\\Users\\diona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diona\\Desktop\\Projetos\\Trabalho API\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\obj\\",
+        "projectPath": "C:\\_ws\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
+        "packagesPath": "C:\\Users\\vitor.agner\\.nuget\\packages\\",
+        "outputPath": "C:\\_ws\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\diona\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\vitor.agner\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -54,7 +59,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.8.0, )"
+              "version": "[6.9.0, )"
             }
           },
           "imports": [
@@ -68,24 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -94,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

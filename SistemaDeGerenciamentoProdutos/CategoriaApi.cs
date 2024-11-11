@@ -6,22 +6,27 @@ public static class CategoriaApi
     {
         var tabela = app.MapGroup("/categorias");
 
-        tabela.MapGet("/categorias", async (BancoDeDados db) =>
+        // Rota GET para todas as categorias
+        tabela.MapGet("/", async (BancoDeDados db) => 
             await db.Categorias.ToListAsync());
+        
 
-        tabela.MapGet("/categorias/{id}", async (int id, BancoDeDados db) =>
+        // Rota GET para uma categoria específica pelo ID
+        tabela.MapGet("/{id}", async (int id, BancoDeDados db) =>
             await db.Categorias.FindAsync(id)
             is Categoria categoria
                 ? Results.Ok(categoria)
                 : Results.NotFound());
 
-        tabela.MapPost("/categorias", async (Categoria categoria, BancoDeDados db) => {
+        // Rota POST para criar uma nova categoria
+        tabela.MapPost("/", async (Categoria categoria, BancoDeDados db) => {
             db.Categorias.Add(categoria);
             await db.SaveChangesAsync();
             return Results.Created($"/categorias/{categoria.ID}", categoria);
         });
 
-        tabela.MapPut("categorias/{id}", async (int id, Categoria categoriaAtualizada, BancoDeDados db) =>
+        // Rota PUT para atualizar uma categoria existente
+        tabela.MapPut("/{id}", async (int id, Categoria categoriaAtualizada, BancoDeDados db) =>
         {
             var categoria = await db.Categorias.FindAsync(id);
             if (categoria is null) return Results.NotFound();
@@ -33,7 +38,8 @@ public static class CategoriaApi
             return Results.NoContent();
         });
 
-        tabela.MapDelete("categorias/{id}", async (int id, BancoDeDados db) =>
+        // Rota DELETE para remover uma categoria
+        tabela.MapDelete("/{id}", async (int id, BancoDeDados db) =>
         {
             if (await db.Categorias.FindAsync(id) is Categoria categoria)
             {
