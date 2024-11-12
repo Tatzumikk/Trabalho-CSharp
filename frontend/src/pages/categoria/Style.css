@@ -1,31 +1,81 @@
-.body {
-    background-color: #d9d9d9;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
 }
 
 .titulo {
-    color: black;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
 }
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
 }
 
 .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    height: 200px;
-    width: 200px;
+    transition: transform 0.2s ease-in-out;
+    width: 100%; /* Garante que as cards preencham a coluna */
+}
+
+.card:hover {
+    transform: translateY(-8px);
 }
 
 .tituloCard {
-    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .inputCard {
-    height: 20px;
-    width: 75px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.response {
+    margin-top: 30px;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1200px;
+    overflow-x: auto;
 }

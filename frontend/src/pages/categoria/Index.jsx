@@ -1,90 +1,141 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import "./Style.css";
 
-function CategoriaCrud() {
-  const [categorias, setCategorias] = useState([]);
-  const [descricao, setDescricao] = useState('');
-  const [selectedCategoria, setSelectedCategoria] = useState(null);
+export default function Categoria() {
+    const [categoriaId, setCategoriaId] = useState('');
+    const [descricao, setDescricao] = useState('');
+    const [response, setResponse] = useState(null);
 
-  useEffect(() => {
-    // Carrega todas as categorias ao montar o componente
-    axios.get('/categorias')
-      .then(response => setCategorias(response.data))
-      .catch(error => console.error('Erro ao carregar categorias:', error));
-  }, []);
+    // Função para buscar uma categoria
+    const buscarCategoria = async () => {
+        try {
+            const res = await fetch(`/categorias/${categoriaId}`);
+            const data = await res.json();
+            setResponse(data);
+        } catch (error) {
+            console.error('Erro ao buscar categoria:', error);
+        }
+    };
 
-  const handleAddCategoria = () => {
-    const novaCategoria = { descricao };
-    axios.post('/categorias', novaCategoria)
-      .then(response => {
-        setCategorias([...categorias, response.data]);
-        limparCampos();
-      })
-      .catch(error => console.error('Erro ao adicionar categoria:', error));
-  };
+    // Função para criar uma categoria
+    const criarCategoria = async () => {
+        try {
+            const res = await fetch(`/categorias`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id: categoriaId, descricao })
+            });
+            const data = await res.json();
+            setResponse(data);
+        } catch (error) {
+            console.error('Erro ao criar categoria:', error);
+        }
+    };
 
-  const handleUpdateCategoria = (id) => {
-    const categoriaAtualizada = { descricao };
-    axios.put(`/categorias/${id}`, categoriaAtualizada)
-      .then(() => {
-        setCategorias(categorias.map(c => (c.id === id ? { ...c, descricao } : c)));
-        limparCampos();
-        setSelectedCategoria(null);
-      })
-      .catch(error => console.error('Erro ao atualizar categoria:', error));
-  };
+    // Função para atualizar uma categoria
+    const atualizarCategoria = async () => {
+        try {
+            const res = await fetch(`/categorias/${categoriaId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ descricao })
+            });
+            if (res.status === 204) {
+                setResponse('Categoria atualizada com sucesso!');
+            }
+        } catch (error) {
+            console.error('Erro ao atualizar categoria:', error);
+        }
+    };
 
-  const handleDeleteCategoria = (id) => {
-    axios.delete(`/categorias/${id}`)
-      .then(() => {
-        setCategorias(categorias.filter(c => c.id !== id));
-      })
-      .catch(error => console.error('Erro ao deletar categoria:', error));
-  };
+    // Função para deletar uma categoria
+    const deletarCategoria = async () => {
+        try {
+            const res = await fetch(`/categorias/${categoriaId}`, {
+                method: 'DELETE'
+            });
+            if (res.status === 204) {
+                setResponse('Categoria deletada com sucesso!');
+            }
+        } catch (error) {
+            console.error('Erro ao deletar categoria:', error);
+        }
+    };
 
-  const limparCampos = () => {
-    setDescricao('');
-  };
+    return (
+        <div className='body'>
+            <h1 className='titulo'>CRUD de Categoria</h1>
 
-  return (
-    <div>
-      <h1>Gerenciamento de Categorias</h1>
+            <div className='cards'>
+                <div className='card'>
+                    <h4 className='tituloCard'>Buscar Categoria - GET</h4>
+                    <input 
+                        className='inputCard' 
+                        type="number" 
+                        placeholder='Insira o ID da Categoria'
+                        value={categoriaId}
+                        onChange={e => setCategoriaId(e.target.value)} 
+                    />
+                    <button onClick={buscarCategoria}>Buscar</button>
+                </div>
+                
+                <div className='card'>
+                    <h4 className='tituloCard'>Inserir Categoria - POST</h4>
+                    <input 
+                        className='inputCard' 
+                        type="number" 
+                        placeholder='Insira o ID da Categoria'
+                        value={categoriaId}
+                        onChange={e => setCategoriaId(e.target.value)} 
+                    />
+                    <input 
+                        className='inputCard' 
+                        type="text" 
+                        placeholder='Insira a descrição da Categoria'
+                        value={descricao}
+                        onChange={e => setDescricao(e.target.value)} 
+                    />
+                    <button onClick={criarCategoria}>Inserir</button>
+                </div>
+                
+                <div className='card'>
+                    <h4 className='tituloCard'>Atualizar Categoria - PUT</h4>
+                    <input 
+                        className='inputCard' 
+                        type="number" 
+                        placeholder='Insira o ID da Categoria'
+                        value={categoriaId}
+                        onChange={e => setCategoriaId(e.target.value)} 
+                    />
+                    <input 
+                        className='inputCard' 
+                        type="text" 
+                        placeholder='Insira a nova descrição da Categoria'
+                        value={descricao}
+                        onChange={e => setDescricao(e.target.value)} 
+                    />
+                    <button onClick={atualizarCategoria}>Atualizar</button>
+                </div>
+                
+                <div className='card'>
+                    <h4 className='tituloCard'>Deletar Categoria - DELETE</h4>
+                    <input 
+                        className='inputCard' 
+                        type="number" 
+                        placeholder='Insira o ID da Categoria'
+                        value={categoriaId}
+                        onChange={e => setCategoriaId(e.target.value)} 
+                    />
+                    <button onClick={deletarCategoria}>Deletar</button>
+                </div>
+            </div>
 
-      {/* Formulário para adicionar/atualizar categorias */}
-      <div>
-        <input
-          type="text"
-          placeholder="Descrição da Categoria"
-          value={descricao}
-          onChange={(e) => setDescricao(e.target.value)}
-        />
-        {selectedCategoria ? (
-          <button onClick={() => handleUpdateCategoria(selectedCategoria.id)}>
-            Atualizar Categoria
-          </button>
-        ) : (
-          <button onClick={handleAddCategoria}>Adicionar Categoria</button>
-        )}
-      </div>
-
-      {/* Lista de categorias */}
-      <div>
-        <h2>Lista de Categorias</h2>
-        <ul>
-          {categorias.map(categoria => (
-            <li key={categoria.id}>
-              {categoria.descricao}
-              <button onClick={() => {
-                setSelectedCategoria(categoria);
-                setDescricao(categoria.descricao);
-              }}>Editar</button>
-              <button onClick={() => handleDeleteCategoria(categoria.id)}>Deletar</button>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
+            {response && <div className='response'><pre>{JSON.stringify(response, null, 2)}</pre></div>}
+        </div>
+    );
 }
-
-export default CategoriaCrud;

@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\_ws\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
         "projectName": "GerenciamentoProdutos",
         "projectPath": "C:\\_ws\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\GerenciamentoProdutos.csproj",
-        "packagesPath": "C:\\Users\\vitor.agner\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Vitor\\.nuget\\packages\\",
         "outputPath": "C:\\_ws\\Trabalho-CSharp\\SistemaDeGerenciamentoProdutos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vitor.agner\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Vitor\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
