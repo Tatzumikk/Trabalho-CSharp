@@ -1,0 +1,31 @@
+.body {
+    background-color: #d9d9d9;
+}
+
+.titulo {
+    color: black;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+.tituloCard {
+    color: black;
+}
+
+.inputCard {
+    height: 20px;
+    width: 75px;
+}

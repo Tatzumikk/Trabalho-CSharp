@@ -5,7 +5,7 @@ function NavApp(){
         <nav class="main-nav">
         <ul>
             <li><NavLink to="/">Home</NavLink></li>
-                  </ul>
+        </ul>
     </nav>
     );
 }
