@@ -9,7 +9,7 @@ function Layout(props) {
    <>
     <HeaderApp/>
     <NavApp/>
-    <main class="content">{props.children}</main>
+    <main className="content">{props.children}</main>
     <AsideApp/>
     <FooterApp/>
    </>

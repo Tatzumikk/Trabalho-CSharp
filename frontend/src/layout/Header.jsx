@@ -1,6 +1,6 @@
 function HeaderApp(){
     return(
-      <header class="main-head">
+      <header className="main-head">
        <h1>Sistema de Gerenciamento de Produtos</h1> 
         </header>  
     );
