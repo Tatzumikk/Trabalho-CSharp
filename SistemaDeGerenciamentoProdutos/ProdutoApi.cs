@@ -15,7 +15,7 @@ public static class ProdutoApi
                 ? Results.Ok(produto)
                 : Results.NotFound());
 
-        tabela.MapPost("/produtos", async (Produto produto, BancoDeDados db) => {
+        tabela.MapPost("/", async (Produto produto, BancoDeDados db) => {
             db.Produtos.Add(produto);
             await db.SaveChangesAsync();
             return Results.Created($"/produtos/{produto.ID}", produto);
