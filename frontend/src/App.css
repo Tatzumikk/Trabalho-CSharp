@@ -3,7 +3,7 @@
 }
 .content {
   grid-area: content;
-  background-color: aquamarine;
+  background-color: rgb(0, 0, 0);
 }
 .main-nav {
   grid-area: nav;
@@ -40,8 +40,8 @@ html, body {
 }
 
 #root > * {
-    border: 2px solid #f08c00;
-    background-color: #ffec99;
+    border: 2px solid #ac00f0;
+    background-color: #da99ff;
     border-radius: 5px;
     padding: 10px;
 }
