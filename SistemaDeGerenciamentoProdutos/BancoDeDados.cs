@@ -5,7 +5,7 @@ public class BancoDeDados : DbContext
     protected override void OnConfiguring(
         DbContextOptionsBuilder builder)
     {
-        string credencial = "server=localhost;port=3306;database=planner;user=root;password=positivo";
+        string credencial = "server=localhost;port=3306;database=planner;user=root;password=admin";
 
         builder.UseMySQL(credencial);
     }
