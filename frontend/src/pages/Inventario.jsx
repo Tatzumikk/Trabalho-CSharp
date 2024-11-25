@@ -30,7 +30,7 @@ function Inventario() {
     if (inventario.id) {
       // Atualizar item existente (PUT)
       axios
-        .put(`http://localhost:5033/inventarios/${inventario.id}`, inventario)
+        .put(`http://localhost:5033/inventarios/inventarios/${inventario.id}`, inventario)
         .then(() => {
           listarInventarios();
           limparFormulario();
@@ -88,7 +88,7 @@ function Inventario() {
   // Função para carregar os dados do inventário no formulário de edição
   function editarInventario(id) {
     axios
-      .get(`http://localhost:5000/inventarios/${id}`)
+      .get(`http://localhost:5033/inventarios/inventarios/${id}`)
       .then((response) => {
         setInventario(response.data);
       })
@@ -125,7 +125,7 @@ function Inventario() {
   // Formulário e lista de inventários
   return (
     <div>
-      <h1>Gerenciamento de Inventário</h1>
+      <h1>Cadastro de Inventário</h1>
       <form>
         {inventario.id !== 0 && (
           <div>
